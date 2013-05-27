@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name, :password, :password_confirmation
 
+  has_many :counters, :dependent => :destroy
+
   has_secure_password
   validates :password_confirmation, presence: true
   validates :password, length: { minimum: 6 }

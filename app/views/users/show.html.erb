@@ -4,8 +4,20 @@
     <section>
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= @user.name %> - <i style="font-size: 14px"><%= @user.email %></i>
       </h1>
     </section>
   </aside>
 </div>
+
+<ul class="users">
+    <li>
+      <strong>28/05/2013 09:15</strong> -- <u>24</u> repetitions
+    </li>
+    <li>
+      <strong>28/05/2013 09:30</strong> -- <u>30</u> repetitions
+    </li>
+    <li>
+      <strong>28/05/2013 10:50</strong> -- <u>50</u> repetitions
+    </li>
+</ul>
